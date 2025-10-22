@@ -14,14 +14,13 @@ It integrates real-world use cases such as API data fetching, state management w
 ## 🧩 Key Learning Areas
 
 ### 1. Fetching Data from a Backend
-- Implemented `fetch()` and `axios` for RESTful API communication.  
+- Implemented `fetch()` for RESTful API communication.  
 - Used **async/await** for clean asynchronous logic.  
 - Implemented **loading**, **error**, and **success** states.  
 - Demonstrated dynamic rendering of fetched data.
 
 ### 2. Creation of Configurable Components
-- Built reusable UI components (e.g., `Button`, `Card`, `Modal`, `InputField`) with props for customization.  
-- Introduced **default props** and **prop validation** using TypeScript or PropTypes.  
+- Built reusable UI components (e.g., `Button`,`Modal`, `InputField`) with props for customization.  
 - Showcased component composition and controlled inputs.
 
 ### 3. Context and Reducer Functions
@@ -30,12 +29,11 @@ It integrates real-world use cases such as API data fetching, state management w
 - Ensured separation of concerns by abstracting reducer logic into dedicated files.
 
 ### 4. Form Submission and Validation
-- Created dynamic forms using **controlled components**.  
-- Integrated validation using **custom logic** and third-party libraries like `Yup` or `react-hook-form`.  
+- Created dynamic forms using **controlled components**.    
 - Handled submission with proper error and success feedback.
 
 ### 5. Custom Hooks
-- Developed custom hooks (e.g., `useFetch`, `useForm`, `useToggle`) for reusability and cleaner logic separation.  
+- Developed custom hooks (e.g., `useHttp`) for reusability and cleaner logic separation.  
 - Showcased how custom hooks encapsulate stateful logic and improve code maintainability.
 
 ---
@@ -56,3 +54,50 @@ It integrates real-world use cases such as API data fetching, state management w
 
 ## 📂 Project Structure
 
+📦src
+ ┣ 📂assets
+ ┃ ┗ 📜logo.jpg
+ ┣ 📂components
+ ┃ ┣ 📂UI
+ ┃ ┃ ┣ 📜Button.jsx
+ ┃ ┃ ┣ 📜Error.jsx
+ ┃ ┃ ┣ 📜Input.jsx
+ ┃ ┃ ┗ 📜Modal.jsx
+ ┃ ┣ 📜Cart.jsx
+ ┃ ┣ 📜CartItem.jsx
+ ┃ ┣ 📜Checkout.jsx
+ ┃ ┣ 📜Header.jsx
+ ┃ ┣ 📜MealItem.jsx
+ ┃ ┗ 📜Meals.jsx
+ ┣ 📂hooks
+ ┃ ┗ 📜useHttp.js
+ ┣ 📂store
+ ┃ ┣ 📜CartContext.jsx
+ ┃ ┗ 📜UserProgressContext.jsx
+ ┣ 📂util
+ ┃ ┗ 📜formatting.js
+ ┣ 📜App.jsx
+ ┣ 📜index.css
+ ┗ 📜main.jsx
+
+---
+
+## ⚙️ Setup and Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/stanelyg/Food-ordering-App.git
+
+
+# Navigate into the project
+cd Food-ordering-App
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+cd backend
+npm install
+npm run start
