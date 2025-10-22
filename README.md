@@ -45,7 +45,7 @@ It integrates real-world use cases such as API data fetching, state management w
 | Frontend Framework | React 19 |
 | Styling | Tailwind CSS / CSS Modules |
 | State Management | Context API + useReducer |
-| Data Fetching | Axios / Fetch API |
+| Data Fetching | Fetch API |
 | Form Handling | React Hook Form / Custom Validation |
 | Build Tool | Vite / Create React App |
 | Version Control | Git + GitHub |
